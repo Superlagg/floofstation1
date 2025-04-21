@@ -1,0 +1,111 @@
+# Welcome to the genitals base file!
+# This is what all these lovely bits are based on.
+
+- type: genital
+  id: GenitalAbstract
+  # This defines what kind of genital this is
+  # Like if its a butt, or a belly, etc
+  # See []
+  category: Abstract
+  # This is the basic name for this shape of genital
+  # If its a pair of breasts, an udder, several rows of nipples, etc
+  # Will be lumped into the same category, as different kinds of that thing
+  name: genital-generic-name
+  # This is the description of the genital
+  description: genital-generic-description
+  # What hides this genital
+  hiddenBy:
+    - Underpants
+    - Underwear
+    - Jumpsuit
+  # What chem does this genital produce, if anything
+  produces:
+    # should it inherit the production from another genital?
+    inheritFrom: null
+    # The ID of the reagent / item
+    produceID: null # Water, Chlorine, Milk, Saline, FoodEgg, Throngler, etc
+    # be it item, or reagent?
+    isItem: false # False for reagents, true for items
+    # The amount of the reagent / item produced per manipulation
+    amount: 1 # units
+    # Nutrition cost to produce 1 unit of the reagent / item
+    nutritionCost: 2
+    # Thirst cost to produce 1 unit of the reagent / item
+    thirstCost: 2
+    # Time it takes to produce Amount of the reagent, when manipulated
+    time: 1 # seconds
+    # The verbiage used when you start manipulating the genital
+    verbiageStart: genital-generic-verbiage-start
+    # The verbiage used when you finish manipulating the genital
+    verbiageFinish: genital-generic-verbiage-finish
+    # The verbiage used when you fail to manipulate the genital
+    verbiageFail: genital-generic-verbiage-fail # fail as in interrupted or something
+  # Roundstart?
+  roundstart: false # False here cus this is abstract
+  # The layering priority of this genital
+  # Used to determine which genital goes over which, if they are in the same layer
+  # The higher the number, the more 'forward' the genital is
+  priority: 0
+  # This is where most of the genital's visual and description data is stored
+  sizes:
+    # Sizes are indexed by their size number, try to keep them in order and contiguous
+    1:
+        # This is the name of the size
+        # 1 inch, 2 inches, A cup, B cup, etc
+        # Vague is fine, like "flat" or "short", its great cus our characters tend to be
+        # all sorts of different sizes, and 6 inches can be tiny for a giant, but huge for a floof
+        name: genital-generic-size-name
+        # This is the description about the size of the genital
+        # 'A flat chest.' or 'A hefty sack of a tummy.'
+        nudeDescription: genital-generic-size-description-nude
+        # This is the description about the size of the genital when it is covered
+        # 'An enormous bulge in their pants.' or 'A rear that stretches the fabric of their jumpsuit.'
+        clothedDescription: genital-generic-size-description-clothed
+        # Can this size be picked in character creation?
+        roundstart: true
+        # This is the genital's visual data for when it is on the mob
+        # Kinda like a marking, but for genitals!
+        sprites:
+          # This is the sprite for the genital
+          # It is a list of sprites, so you can have multiple sprites for the same size
+          # This is useful for things like breasts, where you can have multiple sprites for different sizes
+          - rsi: Floof/Mobs/Genitals/belly_onmob.rsi # Mobs/Genitals/genitals.rsi
+            # This is the state of the sprite
+            # It is the name of the state in the sprite file
+            state: belly_1_tummy # genitals-abstract-1-front
+            # The layers this genital can visually occupy on your mob
+            # Can have multiple layers, like a setting for under undies, over undies, etc
+            # See [] for the list of layers settings
+            # See [] for the list of layers this thing can be customized to be on
+            layers:
+              underUndies:  GenitalBodyFront
+            # Todo: list of layers this thing can be customized to be on
+          - rsi: null # Mobs/Genitals/genitals.rsi
+            state: null # genitals-abstract-1-back
+            layers:
+              underUndies: GenitalBodyBehind
+    # if the genital can become bigger than the max size, this is the size that it can become
+    oversize:
+        name: genital-generic-size-oversize-name
+        descriptionNude: genital-generic-size-oversize-description-nude
+        descriptionClothed: genital-generic-size-oversize-description-clothed
+        roundstart: false
+        sprites:
+          - rsi: Floof/Mobs/Genitals/belly_onmob.rsi # Mobs/Genitals/genitals.rsi
+            state: belly_1_tummy # genitals-abstract-oversize-front
+            layers:
+              underUndies: GenitalUnderUndies
+    # if the genital can become smaller than the min size, this is the size that it can become
+    undersize:
+        name: genital-generic-size-undersize-name
+        descriptionNude: genital-generic-size-undersize-description-nude
+        descriptionClothed: genital-generic-size-undersize-description-clothed
+        roundstart: false
+        sprites:
+          - rsi: Floof/Mobs/Genitals/belly_onmob.rsi # Mobs/Genitals/genitals.rsi
+            state: belly_1_tummy # genitals-abstract-undersize-front
+            layers:
+              underUndies: GenitalUnderUndies
+
+
+

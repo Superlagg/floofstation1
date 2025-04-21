@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "testicles_single_1"
+    },
+    {
+      "name": "testicles_single_2"
+    },
+    {
+      "name": "testicles_single_3"
+    },
+    {
+      "name": "testicles_single_1_s"
+    },
+    {
+      "name": "testicles_single_2_s"
+    },
+    {
+      "name": "testicles_single_3_s"
+    },
+    {
+      "name": "testicles_hidden_1"
+    },
+    {
+      "name": "testicles_hidden_2"
+    },
+    {
+      "name": "testicles_hidden_3"
+    },
+    {
+      "name": "testicles_hidden_1_s"
+    },
+    {
+      "name": "testicles_hidden_2_s"
+    },
+    {
+      "name": "testicles_hidden_3_s"
+    }
+  ]
+}

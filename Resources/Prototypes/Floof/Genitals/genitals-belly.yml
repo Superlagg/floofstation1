@@ -1,0 +1,402 @@
+# Bellies! Includes a round one, an obese one, and an udder one!
+
+- type: genital
+  id: GenitalBellyTummy
+  category: Belly
+  name: genital-belly-tummy-name
+  description: genital-belly-tummy-description
+  hiddenBy:
+    - Undershirt
+    - Jumpsuit
+  # No production for this one (I guess it could sweat? someone else can add that)
+  roundstart: true
+  priority: 0
+  sizes:
+    1:
+      name: genital-belly-tummy-size-1-name
+      nudeDescription: genital-belly-tummy-size-1-description-nude
+      coveredDescription: genital-belly-tummy-size-1-description-covered
+      roundstart: true
+      sprites:
+        - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+          state: belly_1_tummy
+          layers:
+            underUndies: GenitalBodyFront
+    2:
+      name: genital-belly-tummy-size-2-name
+      nudeDescription: genital-belly-tummy-size-2-description-nude
+      coveredDescription: genital-belly-tummy-size-2-description-covered
+      roundstart: true
+      sprites:
+        - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+          state: belly_2_tummy
+          layers:
+            underUndies: GenitalBodyFront
+    4:
+      name: genital-belly-tummy-size-4-name
+      nudeDescription: genital-belly-tummy-size-4-description-nude
+      coveredDescription: genital-belly-tummy-size-4-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_4_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    5:
+      name: genital-belly-tummy-size-5-name
+      nudeDescription: genital-belly-tummy-size-5-description-nude
+      coveredDescription: genital-belly-tummy-size-5-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_5_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    6:
+      name: genital-belly-tummy-size-6-name
+      nudeDescription: genital-belly-tummy-size-6-description-nude
+      coveredDescription: genital-belly-tummy-size-6-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_6_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    7:
+      name: genital-belly-tummy-size-7-name
+      nudeDescription: genital-belly-tummy-size-7-description-nude
+      coveredDescription: genital-belly-tummy-size-7-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_7_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    8:
+      name: genital-belly-tummy-size-8-name
+      nudeDescription: genital-belly-tummy-size-8-description-nude
+      coveredDescription: genital-belly-tummy-size-8-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_8_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    9:
+      name: genital-belly-tummy-size-9-name
+      nudeDescription: genital-belly-tummy-size-9-description-nude
+      coveredDescription: genital-belly-tummy-size-9-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_9_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    10:
+      name: genital-belly-tummy-size-10-name
+      nudeDescription: genital-belly-tummy-size-10-description-nude
+      coveredDescription: genital-belly-tummy-size-10-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_10_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    11:
+      name: genital-belly-tummy-size-11-name
+      nudeDescription: genital-belly-tummy-size-11-description-nude
+      coveredDescription: genital-belly-tummy-size-11-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_11_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    oversize:
+      name: genital-belly-tummy-size-11-name
+      nudeDescription: genital-belly-tummy-size-11-description-nude
+      coveredDescription: genital-belly-tummy-size-11-description-covered
+      roundstart: false
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_11_tummy
+        layers:
+            underUndies: GenitalBodyFront
+    undersize:
+      name: genital-belly-tummy-size-1-name
+      nudeDescription: genital-belly-tummy-size-1-description-nude
+      coveredDescription: genital-belly-tummy-size-1-description-covered
+      roundstart: false
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_1_tummy
+        layers:
+            underUndies: GenitalBodyFront
+
+- type: genital
+  id: GenitalBellyObese
+  category: Belly
+  name: genital-belly-obese-name
+  description: genital-belly-obese-description
+  hiddenBy:
+    - Undershirt
+    - Jumpsuit
+  # No production for this one (I guess it could sweat? someone else can add that)
+  roundstart: true
+  priority: 0
+  sizes:
+    1:
+      name: genital-belly-obese-size-1-name
+      nudeDescription: genital-belly-obese-size-1-description-nude
+      coveredDescription: genital-belly-obese-size-1-description-covered
+      roundstart: true
+      sprites:
+        - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+          state: belly_1_obese
+          layers:
+            underUndies: GenitalBodyFront
+    2:
+      name: genital-belly-obese-size-2-name
+      nudeDescription: genital-belly-obese-size-2-description-nude
+      coveredDescription: genital-belly-obese-size-2-description-covered
+      roundstart: true
+      sprites:
+        - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+          state: belly_2_obese
+          layers:
+            underUndies: GenitalBodyFront
+    4:
+      name: genital-belly-obese-size-4-name
+      nudeDescription: genital-belly-obese-size-4-description-nude
+      coveredDescription: genital-belly-obese-size-4-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_4_obese
+        layers:
+            underUndies: GenitalBodyFront
+    5:
+      name: genital-belly-obese-size-5-name
+      nudeDescription: genital-belly-obese-size-5-description-nude
+      coveredDescription: genital-belly-obese-size-5-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_5_obese
+        layers:
+            underUndies: GenitalBodyFront
+    6:
+      name: genital-belly-obese-size-6-name
+      nudeDescription: genital-belly-obese-size-6-description-nude
+      coveredDescription: genital-belly-obese-size-6-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_6_obese
+        layers:
+            underUndies: GenitalBodyFront
+    7:
+      name: genital-belly-obese-size-7-name
+      nudeDescription: genital-belly-obese-size-7-description-nude
+      coveredDescription: genital-belly-obese-size-7-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_7_obese
+        layers:
+            underUndies: GenitalBodyFront
+    8:
+      name: genital-belly-obese-size-8-name
+      nudeDescription: genital-belly-obese-size-8-description-nude
+      coveredDescription: genital-belly-obese-size-8-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_8_obese
+        layers:
+            underUndies: GenitalBodyFront
+    9:
+      name: genital-belly-obese-size-9-name
+      nudeDescription: genital-belly-obese-size-9-description-nude
+      coveredDescription: genital-belly-obese-size-9-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_9_obese
+        layers:
+            underUndies: GenitalBodyFront
+    10:
+      name: genital-belly-obese-size-10-name
+      nudeDescription: genital-belly-obese-size-10-description-nude
+      coveredDescription: genital-belly-obese-size-10-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_10_obese
+        layers:
+            underUndies: GenitalBodyFront
+    11:
+      name: genital-belly-obese-size-11-name
+      nudeDescription: genital-belly-obese-size-11-description-nude
+      coveredDescription: genital-belly-obese-size-11-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_11_obese
+        layers:
+            underUndies: GenitalBodyFront
+    oversize:
+      name: genital-belly-obese-size-11-name
+      nudeDescription: genital-belly-obese-size-11-description-nude
+      coveredDescription: genital-belly-obese-size-11-description-covered
+      roundstart: false
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_11_obese
+        layers:
+            underUndies: GenitalBodyFront
+    undersize:
+      name: genital-belly-obese-size-1-name
+      nudeDescription: genital-belly-obese-size-1-description-nude
+      coveredDescription: genital-belly-obese-size-1-description-covered
+      roundstart: false
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_1_obese
+        layers:
+            underUndies: GenitalBodyFront
+
+- type: genital
+  id: GenitalBellyUdders
+  category: Belly
+  name: genital-belly-udders-name
+  description: genital-belly-udders-description
+  hiddenBy:
+    - Undershirt
+    - Jumpsuit
+  # No production for this one (I guess it could sweat? someone else can add that)
+  roundstart: true
+  priority: 0
+  sizes:
+    1:
+      name: genital-belly-udders-size-1-name
+      nudeDescription: genital-belly-udders-size-1-description-nude
+      coveredDescription: genital-belly-udders-size-1-description-covered
+      roundstart: true
+      sprites:
+        - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+          state: belly_1_udders
+          layers:
+            underUndies: GenitalBodyFront
+    2:
+      name: genital-belly-udders-size-2-name
+      nudeDescription: genital-belly-udders-size-2-description-nude
+      coveredDescription: genital-belly-udders-size-2-description-covered
+      roundstart: true
+      sprites:
+        - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+          state: belly_2_udders
+          layers:
+            underUndies: GenitalBodyFront
+    4:
+      name: genital-belly-udders-size-4-name
+      nudeDescription: genital-belly-udders-size-4-description-nude
+      coveredDescription: genital-belly-udders-size-4-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_4_udders
+        layers:
+            underUndies: GenitalBodyFront
+    5:
+      name: genital-belly-udders-size-5-name
+      nudeDescription: genital-belly-udders-size-5-description-nude
+      coveredDescription: genital-belly-udders-size-5-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_5_udders
+        layers:
+            underUndies: GenitalBodyFront
+    6:
+      name: genital-belly-udders-size-6-name
+      nudeDescription: genital-belly-udders-size-6-description-nude
+      coveredDescription: genital-belly-udders-size-6-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_6_udders
+        layers:
+            underUndies: GenitalBodyFront
+    7:
+      name: genital-belly-udders-size-7-name
+      nudeDescription: genital-belly-udders-size-7-description-nude
+      coveredDescription: genital-belly-udders-size-7-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_7_udders
+        layers:
+            underUndies: GenitalBodyFront
+    8:
+      name: genital-belly-udders-size-8-name
+      nudeDescription: genital-belly-udders-size-8-description-nude
+      coveredDescription: genital-belly-udders-size-8-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_8_udders
+        layers:
+            underUndies: GenitalBodyFront
+    9:
+      name: genital-belly-udders-size-9-name
+      nudeDescription: genital-belly-udders-size-9-description-nude
+      coveredDescription: genital-belly-udders-size-9-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_9_udders
+        layers:
+            underUndies: GenitalBodyFront
+    10:
+      name: genital-belly-udders-size-10-name
+      nudeDescription: genital-belly-udders-size-10-description-nude
+      coveredDescription: genital-belly-udders-size-10-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_10_udders
+        layers:
+            underUndies: GenitalBodyFront
+    11:
+      name: genital-belly-udders-size-11-name
+      nudeDescription: genital-belly-udders-size-11-description-nude
+      coveredDescription: genital-belly-udders-size-11-description-covered
+      roundstart: true
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_11_udders
+        layers:
+            underUndies: GenitalBodyFront
+    oversize:
+      name: genital-belly-udders-size-11-name
+      nudeDescription: genital-belly-udders-size-11-description-nude
+      coveredDescription: genital-belly-udders-size-11-description-covered
+      roundstart: false
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_11_udders
+        layers:
+            underUndies: GenitalBodyFront
+    undersize:
+      name: genital-belly-udders-size-1-name
+      nudeDescription: genital-belly-udders-size-1-description-nude
+      coveredDescription: genital-belly-udders-size-1-description-covered
+      roundstart: false
+      sprites:
+      - rsi: Floof/Mobs/Genitals/belly_onmob.rsi
+        state: belly_1_udders
+        layers:
+            underUndies: GenitalBodyFront
+
+

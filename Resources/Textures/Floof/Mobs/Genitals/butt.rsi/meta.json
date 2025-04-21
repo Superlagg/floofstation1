@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "butt_pair_5"
+    },
+    {
+      "name": "butt_pair_4"
+    },
+    {
+      "name": "butt_pair_3"
+    },
+    {
+      "name": "butt_pair_2"
+    },
+    {
+      "name": "butt_pair_1"
+    },
+    {
+      "name": "butt_pair_5_s"
+    },
+    {
+      "name": "butt_pair_4_s"
+    },
+    {
+      "name": "butt_pair_3_s"
+    },
+    {
+      "name": "butt_pair_2_s"
+    },
+    {
+      "name": "butt_pair_1_s"
+    }
+  ]
+}
