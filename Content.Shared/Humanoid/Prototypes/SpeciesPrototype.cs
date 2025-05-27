@@ -64,6 +64,14 @@ public sealed partial class SpeciesPrototype : IPrototype
     public string MarkingPoints { get; private set; } = default!;
 
     /// <summary>
+    /// The tags associated with this species.
+    /// Mostly used for marking species restrictions!
+    /// FLOOF ADD =3
+    /// </summary>
+    [DataField("markingTags")]
+    public List<string>? MarkingTags { get; private set; }
+
+    /// <summary>
     ///     Humanoid species variant used by this entity.
     /// </summary>
     [DataField(required: true)]

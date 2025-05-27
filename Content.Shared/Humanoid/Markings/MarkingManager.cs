@@ -74,7 +74,11 @@ namespace Content.Shared.Humanoid.Markings
 
                 if (marking.SpeciesRestrictions != null && !marking.SpeciesRestrictions.Contains(species))
                 {
-                    continue;
+                    // FLOOF ADD =3
+                    if (!SpeciesAndMarkingTagsIntersect(speciesProto, marking))
+                    {
+                        continue;
+                    }
                 }
                 res.Add(key, marking);
             }
@@ -137,7 +141,11 @@ namespace Content.Shared.Humanoid.Markings
 
                 if (marking.SpeciesRestrictions != null && !marking.SpeciesRestrictions.Contains(species))
                 {
-                    continue;
+                    // FLOOF ADD =3
+                    if (!SpeciesAndMarkingTagsIntersect(speciesProto, marking))
+                    {
+                        continue;
+                    }
                 }
 
                 if (marking.SexRestriction != null && marking.SexRestriction != sex)
@@ -172,12 +180,19 @@ namespace Content.Shared.Humanoid.Markings
             }
 
             if (proto.MarkingCategory != category ||
-                proto.SpeciesRestrictions != null && !proto.SpeciesRestrictions.Contains(species) ||
                 proto.SexRestriction != null && proto.SexRestriction != sex)
             {
                 return false;
             }
-
+            if (proto.SpeciesRestrictions != null && !proto.SpeciesRestrictions.Contains(species))
+            {
+                // FLOOF ADD =3
+                var speciesProto = _prototypeManager.Index<SpeciesPrototype>(species);
+                if (!SpeciesAndMarkingTagsIntersect(speciesProto, proto))
+                {
+                    return false;
+                }
+            }
             if (marking.MarkingColors.Count != proto.Sprites.Count)
             {
                 return false;
@@ -212,7 +227,11 @@ namespace Content.Shared.Humanoid.Markings
             if (prototype.SpeciesRestrictions != null
                 && !prototype.SpeciesRestrictions.Contains(species))
             {
-                return false;
+                // FLOOF ADD =3
+                if (!SpeciesAndMarkingTagsIntersect(speciesProto, prototype))
+                {
+                    return false;
+                }
             }
 
             if (prototype.SexRestriction != null && prototype.SexRestriction != sex)
@@ -238,6 +257,11 @@ namespace Content.Shared.Humanoid.Markings
             if (prototype.SpeciesRestrictions != null &&
                 !prototype.SpeciesRestrictions.Contains(species))
             {
+                // FLOOF ADD =3
+                if (!SpeciesAndMarkingTagsIntersect(speciesProto, prototype))
+                {
+                    return false;
+                }
                 return false;
             }
 
@@ -267,6 +291,26 @@ namespace Content.Shared.Humanoid.Markings
 
             alpha = sprite.LayerAlpha;
             return true;
+        }
+
+        /// <summary>
+        /// Check if:
+        /// 1. The marking has a species tag
+        /// 2. The species has a marking tag
+        /// 3. Any of the marking tags are in the species marking tags
+        /// </summary>
+        private bool SpeciesAndMarkingTagsIntersect(
+            SpeciesPrototype speciesProto,
+            MarkingPrototype markingProto
+        )
+        {
+            if (speciesProto.MarkingTags == null || markingProto.SpeciesTags == null)
+            {
+                return false;
+            }
+
+            return speciesProto.MarkingTags
+                .Any(tag => markingProto.SpeciesTags!.Contains(tag));
         }
     }
 }

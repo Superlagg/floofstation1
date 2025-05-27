@@ -20,6 +20,19 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("speciesRestriction")]
         public List<string>? SpeciesRestrictions { get; private set; }
 
+        /// <summary>
+        /// The tags associated with this.
+        /// So, previous (and current) system of marking species restrictions
+        /// used a list of species names. Less than ideal, since any time you
+        /// wanted to add a new marking, or a new species, or change a species
+        /// you had to go through and modify an already long list of species
+        /// on every single marking. Oh yeah it also wasnt standardized, so
+        /// find-replace was kinda tricky
+        /// FLOOF ADD =3
+        /// </summary>
+        [DataField("speciesTags")]
+        public List<string>? SpeciesTags { get; private set; }
+
         [DataField("sexRestriction")]
         public Sex? SexRestriction { get; private set; }
 
